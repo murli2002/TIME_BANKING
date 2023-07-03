@@ -1,0 +1,109 @@
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<div class='signup-container'>
+    <div class='left-container'>
+      <h1>
+        <i class='fas fa-stethoscope'></i>
+        GYM Fitness Check
+      </h1>
+      <p>A gym is a place where people go to train and exercise, but also to unwind, socialize, and recharge. 
+        Therefore, a good gym is a facility that promotes physical activity, provides a safe, functional, and comfortable workout 
+        environment, and creates a pleasant and enjoyable atmosphere for recreation and socialization.
+      </p>
+     
+    </div>
+    <div class='right-container'>
+      <header>
+        <h1>Information Form</h1>
+        <div class='set'>
+          <div class='pets-name'>
+            <label for='pets-name'>Name</label>
+            <input id='pets-name' placeholder="Full Name" type='text'>
+          </div>
+          <div class='pets-photo'>
+            <button id='pets-upload' onclick="const fileUpload = document.getElementById('file-upload').click();">
+              <i class='fas fa-camera-retro'></i>
+            </button>
+            <input id="file-upload" type="file" style="display: none;">
+            <label for='pets-upload'>Upload a photo</label>
+          </div>
+        </div>
+        <div class='set'>
+          <div class='pets-breed'>
+            <label for='pets-breed'>Age</label>
+            <input id='pets-breed' placeholder="Age" type='text'>
+          </div>
+          <div class='pets-birthday'>
+            <label for='pets-birthday'>Appointment</label>
+            <input type="date" id="pets-birthday" name="date">
+          </div>
+        </div>
+        <div class='set'>
+            <div class='pets-birthday'>
+                <label for='pets-birthday'>Trainer</label>
+                <input id='pets-birthday1' placeholder='General Trainer' type='text'>
+              </div>
+            <div class='pets-birthday'>
+              <label for='pets-birthday'>Phone Number</label>
+              <input id='pets-birthday2' placeholder='+91' type='text'>
+            </div>
+          </div>
+        <div class='set'>
+          <div class='pets-gender'>
+            <label for='pet-gender-female'>Gender</label>
+            <div class='radio-container'>
+              <input checked='' id='pet-gender-female' name='pet-gender' type='radio' value='female'>
+              <label for='pet-gender-female'>Female</label>
+              <input id='pet-gender-male' name='pet-gender' type='radio' value='male'>
+              <label for='pet-gender-male'>Male</label>
+            </div>
+          </div>
+          <div class='pets-spayed-neutered'>
+            <label for='pet-spayed'>Experience + or -</label>
+            <div class='radio-container'>
+              <input checked='' id='pet-spayed' name='spayed-neutered' type='radio' value='spayed'>
+              <label for='pet-spayed'>Positive</label>
+              <input id='pet-neutered' name='spayed-neutered' type='radio' value='neutered'>
+              <label for='pet-neutered'>Negative</label>
+            </div>
+          </div>
+        </div>
+        <div class='pets-weight'>
+          <label for='pet-weight-0-25'>Weight</label>
+          <div class='radio-container'>
+            <input checked='' id='pet-weight-0-25' name='pet-weight' type='radio' value='0-25'>
+            <label for='pet-weight-0-25'>0-25 lbs</label>
+            <input id='pet-weight-25-50' name='pet-weight' type='radio' value='25-50'>
+            <label for='pet-weight-25-50'>25-50 lbs</label>
+            <input id='pet-weight-50-100' name='pet-weight' type='radio' value='50-100'>
+            <label for='pet-weight-50-100'>50-100 lbs</label>
+            <input id='pet-weight-100-plus' name='pet-weight' type='radio' value='100+'>
+            <label for='pet-weight-100-plus'>100+ lbs</label>
+          </div>
+        </div>
+        <br>
+        <div class='pets-weight'>
+            <label for='pet-weight-0-251'>Blood Group</label>
+            <div class='radio-container'>
+              <input checked='' id='pet-weight-0-251' name='pet-weight1' type='radio' value='A'>
+              <label for='pet-weight-0-251'>A</label>
+              <input id='pet-weight-25-501' name='pet-weight1' type='radio' value='B'>
+              <label for='pet-weight-25-501'>B</label>
+              <input id='pet-weight-50-1001' name='pet-weight1' type='radio' value='AB'>
+              <label for='pet-weight-50-1001'>AB</label>
+              <input id='pet-weight-100-plus1' name='pet-weight1' type='radio' value='O'>
+              <label for='pet-weight-100-plus1'>O</label>
+            </div>
+        </div>
+      </header>
+      <footer>
+        <div class='set'>
+          <button id='next'>Submit</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
